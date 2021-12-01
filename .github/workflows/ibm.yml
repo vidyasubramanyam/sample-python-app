@@ -9,8 +9,8 @@
 name: Build and Deploy to IKS
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: [ main ]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
@@ -20,7 +20,7 @@ env:
   ICR_NAMESPACE: ${{ secrets.ICR_NAMESPACE }}
   REGISTRY_HOSTNAME: us.icr.io
   IMAGE_NAME: iks-test
-  IKS_CLUSTER: br81hufw0csdd57q7gug
+  IKS_CLUSTER: c6jgod1f0elvvlag7hfg
   DEPLOYMENT_NAME: iks-test
   PORT: 5001
 
