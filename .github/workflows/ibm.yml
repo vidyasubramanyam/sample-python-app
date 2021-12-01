@@ -17,9 +17,9 @@ on:
 env:
   GITHUB_SHA: ${{ github.sha }}
   IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
-  IBM_CLOUD_REGION: eu-de
+  IBM_CLOUD_REGION: 
   ICR_NAMESPACE: ${{ secrets.ICR_NAMESPACE }}
-  REGISTRY_HOSTNAME: eu.icr.io
+  REGISTRY_HOSTNAME: icr.io
   IMAGE_NAME: iks-test
   IKS_CLUSTER: c6jgod1f0elvvlag7hfg
   DEPLOYMENT_NAME: iks-test
